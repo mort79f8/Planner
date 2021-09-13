@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.ReactModal__Overlay {
+   opacity: 0;
+   transition: opacity 200ms ease-in-out;
+   z-index: 3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ReactModal__Overlay--after-open{
+   opacity: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ReactModal__Overlay--before-close{
+   opacity: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* width */
+::-webkit-scrollbar {
+   width: 15px;
+   border-radius: 5px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: #888;
+   box-sizing: initial;
+   border-radius: 5px;
+   
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #ddd;
+   border-radius: 5px;
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: #ccc;
+ }
+
+ 
+form{
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.2rem;
+}
+form input{
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: .5rem;
+  width:100%;
+  outline: none;
+  border:2px solid transparent;
+  transition: .3s;
+}
+form input:focus{
+  border:2px solid #393939;
+
 }
 
-.App-link {
-  color: #61dafb;
+form button{
+  margin-top: 2rem;
+  display: block;
+  height: 3rem;
+  width: 10rem;
+  border: none;
+  background: #ddd;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: #6f6f6f;
+  border-radius: 1.5rem;
+  outline: none;
+  cursor: pointer;
+  border:2px solid transparent;
+  transition: .3s;
+}
+form button:hover
+,form button:focus{
+  border:2px solid #393939;
+
+}
+form div{
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input, form label{
+  display: block;
+  margin: 10px 0;
 }

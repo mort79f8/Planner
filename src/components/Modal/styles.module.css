@@ -1,0 +1,30 @@
+.modal {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   background-color: #6f6f6f;
+   color: #ddd;
+   outline: none;
+   padding: 20px;
+   border-radius: 10px;
+   width: 500px;
+   height: 500px;
+   transform: translate(-50%, -50%);
+   box-shadow: 0 0 30px 30px #333, 0 0 100px 500px #33333366;
+}
+
+.modal > div{
+   overflow-y: auto;
+   top: 10px;
+   bottom: 10px;
+   width:80%;
+   margin: 0 auto;
+}
+
+.modalOverlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
